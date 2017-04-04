@@ -3587,7 +3587,8 @@ written in Python, such as a mail server's external command delivery program.
 .. data:: WNOHANG
 
    The option for :func:`waitpid` to return immediately if no child process status
-   is available immediately. The function returns ``(0, 0)`` in this case.
+   is available immediately. The function returns a process id of ``0`` in this
+   case (and the second element of the tuple is undefined).
 
    Availability: Unix.
 
